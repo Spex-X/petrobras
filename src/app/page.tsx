@@ -51,7 +51,7 @@ const HeroSection = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <a
-          href="#preco"
+          href="https://pay.cakto.com.br/hvjw998_783768"
           className="bg-gold-gradient text-primary-foreground font-heading text-lg md:text-xl font-bold uppercase px-10 py-5 rounded-lg animate-pulse-glow hover:scale-105 transition-transform"
         >
           Quero Ser Aprovado na Petrobras
@@ -412,7 +412,7 @@ const PricingSection = () => (
             ))}
           </ul>
           <a
-            href="#"
+            href="https://pay.cakto.com.br/hvjw998_783768"
             className="block w-full bg-gold-gradient text-primary-foreground font-heading text-xl font-bold uppercase py-5 rounded-lg hover:scale-105 transition-transform animate-pulse-glow"
           >
             Garantir Minha Vaga no Desafio
@@ -478,7 +478,7 @@ const FooterCTA = () => (
       </p>
       <p className="text-muted-foreground text-lg mb-10">A decisão é sua. Mas o concurso não vai esperar.</p>
       <a
-        href="#preco"
+        href="https://pay.cakto.com.br/hvjw998_783768"
         className="inline-block bg-gold-gradient text-primary-foreground font-heading text-xl font-bold uppercase px-12 py-5 rounded-lg hover:scale-105 transition-transform animate-pulse-glow"
       >
         Começar Agora e Garantir Minha Vaga
