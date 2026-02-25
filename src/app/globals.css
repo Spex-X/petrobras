@@ -1,21 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f0f0f;
+  --foreground: #f5f5f5;
+  --primary: #e5c100;
+  --primary-foreground: #0a0a0a;
+  --secondary: #22c55e;
+  --destructive: #dc2626;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --border: color-mix(in oklab, var(--foreground) 12%, transparent);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-destructive: var(--destructive);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f0f0f;
+    --foreground: #f5f5f5;
+    --primary: #e5c100;
+    --primary-foreground: #0a0a0a;
+    --secondary: #22c55e;
+    --destructive: #dc2626;
+    --muted: #1a1a1a;
+    --muted-foreground: #a3a3a3;
+    --border: color-mix(in oklab, var(--foreground) 12%, transparent);
   }
 }
 
@@ -23,4 +44,49 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-sans);
+  }
+
+  .bg-hero-gradient {
+    background: radial-gradient(1200px 700px at 50% 10%, color-mix(in oklab, var(--primary) 35%, transparent), transparent 60%),
+      linear-gradient(180deg, color-mix(in oklab, var(--background) 30%, transparent), var(--background));
+  }
+
+  .bg-card-gradient {
+    background: linear-gradient(180deg, color-mix(in oklab, var(--background) 85%, transparent), var(--background));
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(90deg, #f5d76e, #b78628, #f5d76e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(90deg, #f5d76e, var(--primary), #f5d76e);
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--primary) 30%, transparent), 0 0 30px color-mix(in oklab, var(--primary) 25%, transparent);
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2.2s ease-in-out infinite;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 0%, transparent);
+    transform: translateZ(0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in oklab, var(--primary) 20%, transparent);
+  }
 }
