@@ -269,21 +269,21 @@ const testimonials = [
   {
     name: "Carlos M.",
     city: "Rio de Janeiro, RJ",
-    role: "Téc. de Operação — Aprovado 2024",
+    role: "Téc. de Operação — Aprovado 2026",
     text: "O desafio me deu a disciplina que eu precisava. Estudei de forma organizada pela primeira vez e fui aprovado em 4º lugar na minha região!",
     avatar: "CM",
   },
   {
     name: "Ana Paula S.",
     city: "Salvador, BA",
-    role: "Téc. de Administração — Aprovada 2024",
+    role: "Téc. de Administração — Aprovada 2026",
     text: "Material excelente e muito bem organizado. Os simulados foram fundamentais para eu me sentir confiante no dia da prova. Passei de primeira!",
     avatar: "AP",
   },
   {
     name: "Rafael O.",
     city: "São Paulo, SP",
-    role: "Téc. de Segurança — Aprovado 2023",
+    role: "Téc. de Segurança — Aprovado 2026",
     text: "Fiz o desafio e na segunda tentativa passei! O método funciona de verdade, é só seguir o cronograma dia após dia.",
     avatar: "RO",
   },
@@ -498,7 +498,7 @@ const FooterCTA = () => (
 const Footer = () => (
   <footer className="py-8 border-t border-border">
     <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-      <p>© 2025 Desafio 21 Dias - Concurso Petrobras. Todos os direitos reservados.</p>
+      <p>© 2026 Desafio 21 Dias - Concurso Petrobras. Todos os direitos reservados.</p>
       <p className="mt-2">Este produto não possui vínculo com a Petrobras S.A.</p>
     </div>
   </footer>
