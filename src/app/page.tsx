@@ -49,12 +49,28 @@ const HeroSection = () => (
         "Se você já estudou, já tentou, já fez prova e não viu seu nome na lista… o problema não é você.{" "}
         <span className="text-primary font-semibold not-italic">É a falta de método.</span>"
       </p>
+      
+      {/* BLOCO 1: CONTEXTO URGENTE */}
+      <div className="max-w-4xl mx-auto mb-12 p-6 bg-destructive/10 border border-destructive/30 rounded-xl">
+        <div className="text-center">
+          <p className="text-destructive font-bold text-lg mb-4">🚨 O MOVIMENTO JÁ COMEÇOU. VOCÊ VAI FICAR OLHANDO?</p>
+          <p className="text-foreground mb-4">
+            A Petrobras historicamente utiliza a Cesgranrio como banca. O próximo concurso não é um boato, é uma questão de tempo.
+          </p>
+          <p className="text-muted-foreground">
+            A verdade é dura: Quando o edital for publicado, a janela de oportunidade se fecha. Quem começa a estudar com o edital na mão já entra na disputa atrasado, desesperado e destinado ao erro básico.
+          </p>
+          <p className="text-primary font-semibold mt-4">
+            O Desafio 21 Dias foi desenhado para quem entendeu que a aprovação se constrói agora, enquanto a concorrência ainda está dormindo.
+          </p>
+        </div>
+      </div>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <a
           href="https://pay.cakto.com.br/hvjw998_783768"
           className="bg-gold-gradient text-primary-foreground font-heading text-lg md:text-xl font-bold uppercase px-10 py-5 rounded-lg animate-pulse-glow hover:scale-105 transition-transform"
         >
-          Quero Ser Aprovado na Petrobras
+          👉 QUERO SAIR NA FRENTE DA CONCORRÊNCIA
         </a>
       </div>
       <div className="flex flex-wrap justify-center gap-6 text-foreground/80 text-sm md:text-base">
@@ -77,34 +93,134 @@ const MistakeSection = () => (
     <div className="container mx-auto px-4 max-w-3xl text-center">
       <div className="inline-flex items-center gap-2 bg-destructive/10 border border-destructive/30 rounded-full px-5 py-2 mb-6">
         <AlertTriangle className="w-5 h-5 text-destructive" />
-        <span className="text-destructive font-semibold text-sm uppercase tracking-wider">Atenção</span>
+        <span className="text-destructive font-semibold text-sm uppercase tracking-wider">❌ POR QUE 90% DOS CANDIDATOS SÃO REPROVADOS?</span>
       </div>
       <h2 className="font-heading text-3xl md:text-5xl font-bold uppercase mb-8">
-        O erro que faz 90% dos candidatos{" "}
-        <span className="text-gold-gradient">reprovar</span>
+        Não é falta de inteligência. <span className="text-gold-gradient">É falta de estratégia.</span>
       </h2>
-      <div className="space-y-4 text-lg text-muted-foreground mb-10">
-        <p className="flex items-center justify-center gap-3">
-          <XCircle className="w-5 h-5 text-destructive shrink-0" />
-          A maioria estuda tudo, mas não estuda <strong className="text-foreground">o que realmente importa.</strong>
+      <div className="space-y-6 text-lg text-muted-foreground mb-10">
+        <p className="flex items-start justify-center gap-3">
+          <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+          <div>
+            <strong className="text-foreground">Procrastinação do Edital:</strong> Esperam o documento sair para abrir o livro. 
+            <span className="text-destructive">Resultado: Estudo desesperado e superficial.</span>
+          </div>
         </p>
-        <p className="flex items-center justify-center gap-3">
-          <XCircle className="w-5 h-5 text-destructive shrink-0" />
-          Pulam de conteúdo em conteúdo sem direção.
+        <p className="flex items-start justify-center gap-3">
+          <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+          <div>
+            <strong className="text-foreground">Estudo Sem Padrão:</strong> Estudam tudo, mas não dominam o "jeito Cesgranrio" de cobrar as questões.
+            <span className="text-destructive">Resultado: Perdem tempo com o que não cai.</span>
+          </div>
         </p>
-        <p className="flex items-center justify-center gap-3">
-          <XCircle className="w-5 h-5 text-destructive shrink-0" />
-          Não fazem revisões estratégicas.
-        </p>
-        <p className="flex items-center justify-center gap-3">
-          <XCircle className="w-5 h-5 text-destructive shrink-0" />
-          Não treinam sob pressão de tempo real.
+        <p className="flex items-start justify-center gap-3">
+          <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+          <div>
+            <strong className="text-foreground">Falta de Base Sólida:</strong> Tentam aprender conteúdos complexos sem ter consolidado o que realmente define a nota.
+            <span className="text-destructive">Resultado: Caem em questões fáceis que deveriam acertar.</span>
+          </div>
         </p>
       </div>
-      <div className="bg-card-gradient border border-primary/30 rounded-xl p-8 glow-gold">
-        <p className="text-xl md:text-2xl font-heading font-bold text-foreground">
-          O <span className="text-gold-gradient">Desafio 21 Dias</span> foi criado para corrigir exatamente isso.
-        </p>
+      <p className="text-primary font-bold text-xl">
+        O Desafio 21 Dias blinda você contra esses erros.
+      </p>
+    </div>
+  </section>
+);
+
+// BLOCO 3: O CONTRASTE (NÓS VS. ELES)
+const ContrastSection = () => (
+  <section className="py-20 bg-background">
+    <div className="container mx-auto px-4 max-w-5xl">
+      <h2 className="font-heading text-4xl md:text-5xl font-bold text-center uppercase mb-12">
+        A ESCOLHA É SUA: <span className="text-gold-gradient">QUAL CAMINHO VOCÊ VAI SEGUIR?</span>
+      </h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-destructive/10 border border-destructive/30 rounded-xl p-8">
+          <h3 className="font-heading text-2xl font-bold text-destructive mb-6">🔴 QUEM ESPERA O EDITAL:</h3>
+          <ul className="space-y-4 text-foreground">
+            <li className="flex items-start gap-3">
+              <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+              <span>Estuda sob pressão e ansiedade.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+              <span>Erra questões fáceis por falta de base.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+              <span>Disputa as sobras com 100 mil pessoas.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <XCircle className="w-5 h-5 text-destructive shrink-0 mt-1" />
+              <span className="font-bold text-destructive">Resultado: Reprovação por detalhes.</span>
+            </li>
+          </ul>
+        </div>
+        <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-8">
+          <h3 className="font-heading text-2xl font-bold text-secondary mb-6">🟢 QUEM COMEÇA AGORA (VOCÊ):</h3>
+          <ul className="space-y-4 text-foreground">
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-1" />
+              <span>Constrói base sólida com calma e estratégia.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-1" />
+              <span>Domina o padrão da banca antes de todo mundo.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-1" />
+              <span>Chega no edital apenas revisando o que já sabe.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <CheckCircle className="w-5 h-5 text-secondary shrink-0 mt-1" />
+              <span className="font-bold text-secondary">Resultado: Nome na lista de aprovados.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+// BLOCO 4: O MÉTODO (O MECANISMO ÚNICO)
+const MethodSection = () => (
+  <section className="py-20 bg-muted/30">
+    <div className="container mx-auto px-4 max-w-4xl text-center">
+      <h2 className="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+        O MÉTODO DE <span className="text-gold-gradient">ANTECIPAÇÃO 21 DIAS</span>
+      </h2>
+      <p className="text-xl text-muted-foreground mb-12">
+        Não é um curso comum. É um Plano de Guerra focado em 3 pilares:
+      </p>
+      <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="bg-card-gradient border border-border rounded-xl p-6">
+          <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Target className="w-8 h-8 text-primary" />
+          </div>
+          <h3 className="font-heading text-xl font-bold mb-3">🎯 Pilar 1: Foco no Peso</h3>
+          <p className="text-muted-foreground">
+            Priorizamos as matérias que historicamente definem a nota de corte na Petrobras.
+          </p>
+        </div>
+        <div className="bg-card-gradient border border-border rounded-xl p-6">
+          <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Zap className="w-8 h-8 text-primary" />
+          </div>
+          <h3 className="font-heading text-xl font-bold mb-3">🧠 Pilar 2: DNA Cesgranrio</h3>
+          <p className="text-muted-foreground">
+            Questões selecionadas a dedo para você "ler a mente" da banca.
+          </p>
+        </div>
+        <div className="bg-card-gradient border border-border rounded-xl p-6">
+          <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Timer className="w-8 h-8 text-primary" />
+          </div>
+          <h3 className="font-heading text-xl font-bold mb-3">⚡ Pilar 3: Velocidade de Absorção</h3>
+          <p className="text-muted-foreground">
+            Conteúdo direto ao ponto. Sem enrolação. Sem teoria infinita. Apenas o que cai.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -493,7 +609,7 @@ const FooterCTA = () => (
         href="https://pay.cakto.com.br/hvjw998_783768"
         className="inline-block bg-gold-gradient text-primary-foreground font-heading text-xl font-bold uppercase px-12 py-5 rounded-lg hover:scale-105 transition-transform animate-pulse-glow"
       >
-        Começar Agora e Garantir Minha Vaga
+        👉 GARANTIR MINHA VAGA E COMEÇAR AGORA
       </a>
       <div className="flex items-center justify-center gap-6 mt-6 text-muted-foreground text-sm">
         <span className="flex items-center gap-1">
@@ -521,6 +637,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <MistakeSection />
+      <ContrastSection />
+      <MethodSection />
       <BenefitsSection />
       <ImageBanner />
       <TimelineSection />
