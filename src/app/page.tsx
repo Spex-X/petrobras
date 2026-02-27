@@ -7,6 +7,7 @@ import {
   CheckCircle,
   ChevronDown,
   Lock,
+  Mail,
   MapPin,
   Shield,
   ShieldCheck,
@@ -377,26 +378,26 @@ const PricingSection = () => (
   <section id="preco" className="py-20 bg-background">
     <div className="container mx-auto px-4">
       <h2 className="font-heading text-4xl md:text-5xl font-bold text-center uppercase mb-4">
-        Invista no seu <span className="text-gold-gradient">futuro</span>
+        INVISTA NO SEU FUTURO POR MENOS QUE O PREÇO DE UM LANCHE
       </h2>
-      <p className="text-muted-foreground text-center text-lg mb-6 max-w-2xl mx-auto">
-        Se você fosse contratar um curso completo, pagaria facilmente <strong className="text-foreground">R$ 497 ou mais.</strong>
+      <p className="text-muted-foreground text-center text-lg mb-6 max-w-3xl mx-auto">
+        Se você fosse contratar um mentor ou um curso completo de meses, pagaria facilmente <strong className="text-foreground">R$ 497,00 ou mais.</strong><br/>
+        Mas o nosso objetivo com o Desafio 21 Dias é democratizar o acesso ao Método de Elite e provar que você pode, sim, chegar competitivo na Petrobras sem gastar uma fortuna.
       </p>
-      <CountdownTimer />
       <div className="max-w-lg mx-auto">
         <div className="bg-card-gradient border-2 border-primary/50 rounded-2xl p-10 text-center glow-gold relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 bg-gold-gradient py-2">
-            <span className="text-primary-foreground font-heading font-bold text-sm uppercase tracking-wider">🔥 Oferta por Tempo Limitado</span>
+            <span className="text-primary-foreground font-heading font-bold text-sm uppercase tracking-wider">🔥 OFERTA DE VALIDAÇÃO - LOTE 01</span>
           </div>
           <div className="mt-8 mb-2">
             <p className="text-muted-foreground line-through text-lg">De R$ 197,00</p>
             <div className="flex items-baseline justify-center gap-2 mt-2">
-              <span className="text-muted-foreground text-2xl">R$</span>
+              <span className="text-muted-foreground text-2xl">POR APENAS R$</span>
               <span className="font-heading text-7xl font-bold text-gold-gradient">19</span>
-              <span className="text-muted-foreground text-lg">,00</span>
+              <span className="text-muted-foreground text-lg">,90</span>
             </div>
-            <p className="text-secondary font-semibold mt-2">ou 12x de R$ 1,99</p>
-            <p className="text-primary text-sm font-semibold mt-1">Menos que o valor de uma inscrição de concurso.</p>
+            <p className="text-secondary font-semibold mt-2">OU 2X DE R$ 10,35</p>
+            <p className="text-primary text-sm font-semibold mt-4">Acesso imediato ao Plano de Guerra + 200 Questões Comentadas.</p>
           </div>
           <ul className="space-y-3 text-left my-8">
             {[
@@ -418,15 +419,23 @@ const PricingSection = () => (
             href="https://pay.cakto.com.br/hvjw998_783768"
             className="block w-full bg-gold-gradient text-primary-foreground font-heading text-xl font-bold uppercase py-5 rounded-lg hover:scale-105 transition-transform animate-pulse-glow"
           >
-            Garantir Minha Vaga no Desafio
+            👉 QUERO GARANTIR MINHA VAGA POR R$ 19,90
           </a>
-          <div className="flex items-center justify-center gap-6 mt-6 text-muted-foreground text-sm">
+          <div className="flex items-center justify-center gap-4 mt-6 text-muted-foreground text-sm">
             <span className="flex items-center gap-1">
-              <Lock className="w-4 h-4" /> Compra segura
+              <Lock className="w-4 h-4" /> Compra 100% Segura
             </span>
             <span className="flex items-center gap-1">
-              <ShieldCheck className="w-4 h-4" /> 7 dias de garantia
+              <Mail className="w-4 h-4" /> Acesso Imediato no E-mail
             </span>
+            <span className="flex items-center gap-1">
+              <ShieldCheck className="w-4 h-4" /> 7 Dias de Garantia Incondicional
+            </span>
+          </div>
+          <div className="mt-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg">
+            <p className="text-destructive font-semibold text-sm text-center">
+              ⚠️ ATENÇÃO: Este valor de R$ 19,90 é exclusivo para os primeiros 100 alunos desta turma de validação. Assim que o lote virar, o preço retorna para R$ 97,00 sem aviso prévio.
+            </p>
           </div>
         </div>
         <div className="mt-6 bg-destructive/10 border border-destructive/30 rounded-xl p-4 text-center">
