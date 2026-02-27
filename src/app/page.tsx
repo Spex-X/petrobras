@@ -389,13 +389,13 @@ const PricingSection = () => (
             <span className="text-primary-foreground font-heading font-bold text-sm uppercase tracking-wider">🔥 Oferta por Tempo Limitado</span>
           </div>
           <div className="mt-8 mb-2">
-            <p className="text-muted-foreground line-through text-lg">De R$ 297,00</p>
+            <p className="text-muted-foreground line-through text-lg">De R$ 197,00</p>
             <div className="flex items-baseline justify-center gap-2 mt-2">
               <span className="text-muted-foreground text-2xl">R$</span>
-              <span className="font-heading text-7xl font-bold text-gold-gradient">97</span>
+              <span className="font-heading text-7xl font-bold text-gold-gradient">19</span>
               <span className="text-muted-foreground text-lg">,00</span>
             </div>
-            <p className="text-secondary font-semibold mt-2">ou 12x de R$ 9,70</p>
+            <p className="text-secondary font-semibold mt-2">ou 12x de R$ 1,99</p>
             <p className="text-primary text-sm font-semibold mt-1">Menos que o valor de uma inscrição de concurso.</p>
           </div>
           <ul className="space-y-3 text-left my-8">
