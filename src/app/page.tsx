@@ -36,14 +36,13 @@ const HeroSection = () => (
         <span className="text-secondary font-semibold text-sm uppercase tracking-widest">🔥 Vagas Limitadas — Turma Fechando</span>
       </div>
       <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold uppercase leading-tight mb-6">
-        Passe no Concurso da Petrobras em{" "}
-        <span className="text-gold-gradient">21 Dias</span>
+        DOMINE O PADRÃO CESGRANRIO E{" "}
+        <span className="text-gold-gradient">ATROPELE A CONCORRÊNCIA</span>
         <br />
-        <span className="text-2xl md:text-4xl lg:text-5xl text-foreground/80">Mesmo Começando do Zero</span>
+        <span className="text-2xl md:text-4xl lg:text-5xl text-foreground/80">EM 21 DIAS</span>
       </h1>
       <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
-        Um plano intensivo e estratégico para candidatos de nível médio e técnico que querem{" "}
-        <strong className="text-foreground">parar de estudar errado</strong> e começar a estudar para passar.
+        O Plano de Guerra para quem não tem tempo a perder e precisa focar apenas no que realmente cai na prova da Petrobras.
       </p>
       <p className="text-base md:text-lg text-foreground/60 italic max-w-2xl mx-auto mb-8">
         "Se você já estudou, já tentou, já fez prova e não viu seu nome na lista… o problema não é você.{" "}
@@ -242,6 +241,10 @@ const AuthoritySection = () => (
         <div>
           <h3 className="font-heading text-2xl font-bold mb-2">Prof. Ricardo Mendes</h3>
           <p className="text-primary font-semibold mb-4">Especialista em Preparação para Concursos</p>
+          <p className="text-foreground font-semibold mb-2">"Eu decifrei o código da Cesgranrio para que você não precise bater a cabeça no edital."</p>
+          <p className="text-muted-foreground mb-4">
+            Aprovado em 12 concursos federais | Especialista em estratégia Cesgranrio | Método testado com 2.500+ alunos
+          </p>
           <p className="text-muted-foreground mb-6">
             Criado por especialista em preparação para concursos com foco em estratégia e alto desempenho. Método testado e validado com
             centenas de alunos aprovados em concursos de grande porte.
